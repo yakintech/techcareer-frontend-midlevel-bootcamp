@@ -2,4 +2,10 @@ BOX MODEL
 https://www.w3schools.com/css/css_boxmodel.asp
 https://www.youtube.com/watch?v=dTUtsy54eP0
 
+İki Kutu Yanyana Gelme Hikayesi
+https://www.youtube.com/watch?v=OaEtW_CSaPk
+
+Ödev
+https://startbootstrap.com/previews/freelancer
+
 
