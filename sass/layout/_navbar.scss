@@ -1,0 +1,12 @@
+nav {
+    h1 {
+        color: $primary-color ;
+    }
+
+    ul{
+        display: flex;
+    }
+    a{
+        text-decoration: none;
+    }
+}
