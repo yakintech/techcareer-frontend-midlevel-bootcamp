@@ -1,0 +1,18 @@
+// Variables and mixins
+@import "abstracts/variables";
+
+// Base styles
+@import "base/reset";
+@import "base/font";
+
+// Components
+@import "components/button";
+
+// Layout
+@import "layout/navbar";
+
+
+// Pages or sections
+@import "pages/home/home";
+
+

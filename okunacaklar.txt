@@ -9,3 +9,7 @@ https://www.youtube.com/watch?v=OaEtW_CSaPk
 https://startbootstrap.com/previews/freelancer
 
 
+sass
+https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/
+https://gist.github.com/jareware/4738651
+
