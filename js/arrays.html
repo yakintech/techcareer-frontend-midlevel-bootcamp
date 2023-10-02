@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    var names = ["İstanbul", "İzmir", "Ankara", "Aydın"];
+
+    //push metodu ile diziye yeni bir eleman ekliyorum.
+    names.push("Erzurum")
+    names.push("Diyarbakır");
+
+
+    console.log('Length', names.length);
+
+
+    //diziden bir arkadaşı silme
+    names.splice(0, 1);
+
+
+    //spread syntax
+    var newNames = [...names, "Müge"]
+
+
+    
+
+
+</script>
+
+</html>
