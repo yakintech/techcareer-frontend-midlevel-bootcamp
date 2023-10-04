@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <button onclick="getProducts()">Emir git ürünleri çek</button>
+    <button onclick="getCategories()">Emir git kategorileri çek</button>
+
+</body>
+<script>
+
+    // axios.get('https://northwind.vercel.app/api/products')
+    //         .then(res => {
+    //             console.log(res.data);
+    //         })
+
+    const axiosInstance = axios.create({
+        baseURL: 'https://northwind.vercel.app/api/'
+    });
+
+    axiosInstance.interceptors.request.use(function (config) {
+        console.log('DATA ALMAYA GİDİYORUM');
+        return config;
+    }, function (error) {
+        // Do something with request error
+        return Promise.reject(error);
+    });
+
+
+
+    function getProducts() {
+       
+        axiosInstance.get('products')
+            .then(res => {
+                console.log(res.data);
+            })
+            .catch(err => {
+                console.log(err);
+            })
+
+    }
+
+
+
+    function getCategories() {
+
+   
+        axiosInstance.get('categories')
+            .then(res => {
+                console.log(res.data);
+            })
+            .catch(err => {
+                console.log(err);
+            })
+
+    }
+
+
+
+
+
+</script>
+
+</html>

@@ -1004,13 +1004,21 @@
 
 
     //fiyatı 30 ile 100 arasında kaç adet ürün var?
+    var filteredProducts = products.filter(x => x.unitPrice > 30 && x.unitPrice < 100)
+    console.log(filteredProducts.length);
+
+
     //ismi a harfi ile başlayan ürünleri console a yazdır
     //ismi a harfi ile BİTEN ürünleri console a yazdır
     // id si 10 olan ürünün adını console a yazdır
+    var product = products.find(q => q.id == 10)
+    console.log(product.name);
+
+    
     //discontinued false olan kaç ürün var
     // en pahalı ürünün adını console a yazdır
     //en ucuz ürünün adını console a yazdır
-    
+
 
 </script>
 
